@@ -1,0 +1,28 @@
+import math
+
+def prime_checker(number):
+
+  number_sqrt = math.ceil(math.sqrt(number))
+
+  # print(number_sqrt)
+  prime=0
+  for i in range(2,number_sqrt):
+    # print(i)
+    if(number%i==0):
+      prime=1
+      break
+
+  if(prime==0):
+    print("It's a prime number.")    
+  else:
+    print("It's not a prime number.")    
+
+
+
+
+
+#Write your code above this line 👆
+    
+#Do NOT change any of the code below👇
+n = int(input("Check this number: "))
+prime_checker(number=n)
